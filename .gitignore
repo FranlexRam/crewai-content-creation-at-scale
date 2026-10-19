@@ -1,0 +1,24 @@
+# Entorno virtual
+venv/
+ENV/
+env/
+
+# Variables de entorno secretas
+.env
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Base de datos vectorial local (ChromaDB) y almacenamiento temporal
+.chroma/
+chroma_db/
+db/
+*.db
+*.sqlite3
+
+# Logs y salidas de ejecución
+*.log
+outputs/

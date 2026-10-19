@@ -1,0 +1,35 @@
+monitor_financial_news:
+  description: >
+    Monitorea y analiza las últimas noticias y actualizaciones relevantes sobre el tema: {subject}.
+    Utiliza las herramientas de búsqueda web para identificar los artículos y reportes más recientes y de alto impacto.
+    Extrae los hechos clave, cambios regulatorios, indicadores económicos y citas de fuentes autorizadas directamente vinculadas con {subject}.
+  expected_output: >
+    Un reporte detallado y estructurado con los eventos noticiosos más relevantes sobre {subject}, incluyendo citas de fuentes, implicaciones de mercado y contexto inicial para el equipo de contenidos.
+
+analyze_market_data:
+  description: >
+    Analiza a fondo las tendencias de mercado, patrones y riesgos vinculados a {subject}.
+    Utiliza búsquedas específicas y consultas de RAG sobre páginas web especializadas encontradas en la fase anterior para recopilar datos cuantitativos sólidos (tasas, proyecciones, impactos sectoriales).
+  expected_output: >
+    Un informe analítico exhaustivo que destaque tendencias de mercado, cifras cuantitativas verificadas, oportunidades y riesgos clave en torno a {subject}.
+
+create_content:
+  description: >
+    A partir de la información procesada por el Lead Market Analyst y el Chief Data Strategist sobre {subject}, redacta:
+    1. Un artículo de análisis profundo en formato Markdown con introducción clara, cuerpo con subtítulos analíticos, análisis de impacto y recomendaciones finales para inversionistas o profesionales.
+    2. Una serie de publicaciones para redes sociales específicamente adaptadas a:
+       - Twitter/X (conciso, con ganchos directos, datos clave y hashtags relevantes).
+       - LinkedIn (tono profesional de liderazgo de pensamiento, párrafos estructurados y sin exceso de emojis).
+       - Instagram (copy atractivo con llamado a la acción claro).
+  expected_output: >
+    Borrador completo que contiene el artículo en Markdown y los distintos copys listos para cada plataforma social.
+
+quality_assurance:
+  description: >
+    Revisa, audita y valida editorialmente todo el material producido sobre {subject}.
+    Verifica que:
+    1. El artículo sea coherente con los datos aportados por los analistas, tenga un flujo narrativo sólido y esté perfectamente formateado en Markdown.
+    2. Las publicaciones para redes sociales reflejen la personalidad y restricciones de cada red social.
+    3. Toda la salida se estruture estrictamente bajo el esquema del modelo ContentOutput.
+  expected_output: >
+    El objeto ContentOutput final validado, con el artículo completo en Markdown y la lista de posts sociales listos para su distribución.
